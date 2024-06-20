@@ -14,14 +14,14 @@ body {
 
 nav{
     background: lightgreen;
-    height: 80px;
+    height: 70px;
     width: 100%;
 }
 
 label.logo{
     color:white;
     font-size: 35px;
-    line-height: 80px;
+    line-height: 70px;
     padding: 0 100px;
     font-weight: bold;
 }
@@ -29,10 +29,10 @@ label.logo{
 nav ul{
     float: right;
     margin-right: 20px;
+    display: flex;
 }
 
 nav ul li{
-    display: inline-block;
     line-height: 80px;
     margin: 0 5px;
 }
@@ -75,67 +75,23 @@ a{
     cursor: pointer;
 }
 
-#check{
-    display:none;
-}
-
-@media (max-width: 952px){
-    label.logo{
-        font-size : 30px;
-        padding-left: 50px;
+ul {
+    display: flex;
+  }
+  
+  li {
+    display: inline;
+  }
+  
+  @media screen and (max-width: 767px) {
+    ul {
+      display: block;
     }
-    nav ul li a{
-        font-size: 16px;
+  
+    li {
+      display: block;
     }
-}
-
-@media (max-width: 858px){
-    .checkbox{
-        display: block;
-    }
-    ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: lightgreen;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-    }
-
-    nav ul li{
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-
-    nav ul li a{
-        font-size: 20px;
-    }
-    
-    a:hover,a.active{
-        background: none;
-        color: #0082e6;
-    }
-
-    #check:checked ~ ul {
-        left: 0;
-    }
-
-}
-
-.navigation-bar ul {
-    padding: 0px;
-    margin: 0px;
-    text-align: center;
-    display:inline-block;
-    vertical-align:top;
-}
-
-body{
-    background-color: rgba(0,0,0,0.1);
-}
+  }
 
 h1{
     text-align: center;
@@ -149,3 +105,61 @@ table{
     border-collapse: separate;
     border-spacing:45;
 }
+
+body {
+    background-color: lightgreen transparent;
+}
+
+.content {
+    padding-top: 60px; /* Adjust based on the height of the navbar */
+    text-align: center;
+    margin-bottom: 20px; /* Space between text and carousel */
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto; /* Adjusted margin to prevent collision with the navbar */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel img {
+    width: 100%;
+    display: none;
+    max-height: 400px; /* Limit the height of the images */
+    object-fit: cover; /* Ensure images cover the container without stretching */
+}
+
+.carousel img.active {
+    display: block;
+}
+
+.carousel-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-buttons button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+img {
+    float: left;
+    margin-right: 20px;
+  }
+  
+  .text-container {
+    margin-left : 20px;
+  }
+

@@ -9,21 +9,122 @@
         <link rel = "stylesheet" href = "mystyle.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
         <script src="myscript.js" defer></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
   </head>
+
   <body>
     <div class = "icon"></div>
-    <nav class = "navbrand">
-        <input type = "checkbox" id = "check">
-        <label for = "check" class = "checkbutton">
-            <i class = "fa solid fa-bars"></i>
+    <nav class = "navbrand fixed-top">
         </label>
         <label class = "logo">MyPlaylist</label>
         <ul>
             <li><a class href ="index.html">Home</a></li>
-            <li><a class = "active"href ="About Us.html">About Us</a></li>
+            <li><a class = "active"href ="About Us">About Us</a></li>
             <li><a href ="#">Contact Us</a></li>
         </ul>
     </nav>
+    <section id = "Home">
+    </br>
+    </br>
+    </br>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="https://img.buzzfeed.com/buzzfeed-static/static/2021-05/27/19/asset/8fce7c094041/sub-buzz-837-1622144028-12.jpg?downsize=900:*&output-format=auto&output-quality=auto" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Vertical_Horizon_in_2010.jpg/800px-Vertical_Horizon_in_2010.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="https://i.ytimg.com/vi/sqSA-SY5Hro/hq720.jpg?sqp=-oaymwEXCK4FEIIDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBsk9J9RIEdlqk6T0HTX_EEpt8JVg" alt="Third slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+      </div>
+  </section>
+  <section>
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-10 col-xl-8 text-center">
+        <h3 class="mb-4">Our website was created for the users by the users. It offers a variety of different music for all ages. It was a visison that at the very fisrt beginning seemed really difficult to create. Now, we have over 2.5 milion users, all of them really grateful for the existence of this website. Below you can see some reviews from them. </h3>
+        <p class="mb-4 pb-2 mb-md-5 pb-md-0">
+        </p>
+      </div>
+    </div>
+  
+    <div class="row text-center">
+      <div class="col-md-4 mb-5 mb-md-0">
+        <div class="d-flex justify-content-center mb-4">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
+            class="rounded-circle shadow-1-strong" width="150" height="150" />
+        </div>
+        <h5 class="mb-3">Maria Smantha</h5>
+        <h6 class="text-primary mb-3">Web Developer</h6>
+        <p class="px-xl-3">
+          I am grateful for using this extraordinary website. The unique and minimal design of this website is what makes it so appealing to the users. With a bit more development, it can surely be a future app and not just a website. 
+        </p>
+      </div>
+      <div class="col-md-4 mb-5 mb-md-0">
+        <div class="d-flex justify-content-center mb-4">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
+            class="rounded-circle shadow-1-strong" width="150" height="150" />
+        </div>
+        <h5 class="mb-3">Lisa Cudrow</h5>
+        <h6 class="text-primary mb-3">Graphic Designer</h6>
+        <p class="px-xl-3">
+          As a graphic designer, I have a keen eye for aesthetics and user experience, and I must say that this music app has exceeded all my expectations. The interface is sleek and intuitive, making it a joy to navigate. The design elements are modern and stylish, perfectly complementing the app's robust functionality.
+      </div>
+      <div class="col-md-4 mb-0">
+        <div class="d-flex justify-content-center mb-4">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"
+            class="rounded-circle shadow-1-strong" width="150" height="150" />
+        </div>
+        <h5 class="mb-3">John Smith</h5>
+        <h6 class="text-primary mb-3">Daily User</h6>
+        <p class="px-xl-3">
+          As an avid music lover, I have tried numerous music websites, but this one truly stands out. The interface is incredibly user-friendly, making it easy to find and create a playlist with my favorite tracks. The app's sleek and modern design enhances the overall experience, making it a pleasure to use.
+        </div>
+  </section>
+</br>
+</br>
+</br>
+<h1><i>Few things about the Developer</i></h1>
+</br>
+<img src="image.jpg" class="rounded-circle mb-3" style="width: 150px;"
+  alt="Avatar"/>
+  <div class = text-container></div>
+    <p>Nicolas Orfanidis is a dedicated and imaginative developer with a deep passion for music and creating exceptional user experiences. Nicolas has a unique talent for blending his love for music with his expertise in web development, resulting in a website that effortlessly generates personalized playlists for music enthusiasts.
+
+      His journey into development was driven by a desire to make music discovery more accessible and enjoyable for everyone. Nicolas is known for his meticulous attention to detail and his commitment to delivering a seamless and engaging experience for users. He believes in the power of music to bring people together and is dedicated to ensuring that his website reflects this ethos.
+      
+      Outside of development, Nicolas enjoys exploring new music genres, attending live concerts, and staying updated with the latest trends in the music industry. His creative vision and enthusiasm for innovation shine through in every project he undertakes, making him a standout figure in the world of music technology. </p>
+  </div>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+  <footer class = "footer">
+    <p>2024 MyPlaylist | You can follow us on
+        <a href = "https://www.linkedin.com/home">LinkedIn</a>
+        <a href = "https://www.facebook.com/">Facebook</a>
+    </p>
+</footer>
+
+</html>
