@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html lang = "en">
+
     <head>
         <!--Specifies the character for the HTML document-->
         <meta charset = "UTF-8">
         <!--Setting The Viewpoint-->
         <meta name = "viewpoint" content="width=device-width", initial scale = "1.0">
         <title>Home</title>
+        <!--External CSS-->
         <link rel = "stylesheet" href = "mystyle.css">
+        <!--External Link for fonts-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--External Link for fonts awesome-->
         <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <!--Bootstrap Link-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!--Link used for jquery script-->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+        <!--Linking external javascript-->
         <script src="myscript.js" defer></script>
+        <script src="myscript2.js" defer></script>
+        <!--Linking bootstrap for basic components-->
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
   </head>
     <body>
+        <!--Sticky Header-->
         <div class = "icon"></div>
         <nav class = "navbrand">
             <label class = "logo">MyPlaylist</label>
@@ -23,6 +33,7 @@
                 <li><a class = "active" href ="#">Home</a></li>
                 <li><a href ="About Us.html">About Us</a></li>
                 <li><a href ="Contact Us.html">Contact Us</a></li>
+                <li><button id="dark-mode-toggle" class="btn btn-secondary">Dark Mode</button></li>
             </ul>
         </nav>
         <main class = "main-content">
@@ -30,26 +41,26 @@
             </br>
             <h1> Create Your Playlist </h1>
             </br> 
-    
             <!--Form to add Songs-->
             <form id = "song-form">
                 <div class = "form-group">
+                    <!--Song Title input field-->
                     <label for = "SongTitle"><b>Song Title :</b></label>
                     <input type = "text" class = "form-check" id = "SongTitle" required>
                     </br>
                 </br>
                 </div>
                 <div class = "form-group">
+                    <!--Artist Name input field-->
                     <label for = "ArtistName"> <b>Artist Name :</b></label>
                     <input type = "text" class = "form-check" id = "ArtistName" required>
                 </div>
             </br>
+                <!--Add song button-->
                 <button type = "submit" class = "button">Add to Playlist</button>
             </br>
             </br>
             </form> 
-
-            
             <!--Display the Playlist-->
             <button id="sort-button" class="button">Sort Playlist</button>
         </br>
@@ -57,7 +68,7 @@
             <table class = "table">
                 <thead>
                     <tr>
-                        <!--Scope command specifies that the header cell is header for a column-->
+                        <!--Scope specifies that the header cell is header for a column-->
                         <th scope = "col" id = "TitleHeader" class = "sort-by">Song Name</th>
                         <th scope = "col" id = "ArtistHeader" class = "sort-by">Artist Name</th>
                     </tr>
